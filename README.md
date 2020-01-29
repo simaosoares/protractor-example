@@ -1,35 +1,35 @@
-# Protractor Example
-
-## Install Protractor
-
-Use npm to install Protractor globally and start selenium server with:
-```shell
-npm install -g protractor
-webdriver-manager update
-webdriver-manager start
-```
+# Protractor Example using Direct Connect
 
 ## Run e2e tests
 
-Open a separated terminal and install the application dependencies: 
-```shell
-npm install
-```
-
-And finally run the tests with:
-```shell
-protractor protractor-conf.js
-```
-
-The npm script `npm test` is configured to run all the steps above: 
+Since property `directConnect` is `true` in `protractor-conf.js` file the protractor communicates directly with Chrome Driver or Firefox Driver, bypassing any Selenium Server:
 ```shell
 npm test
 ```
-## Using Chrome Headless
 
-Just checkout the branch [Chrome Headless](https://github.com/simaosoares/protractor-example/tree/headless-chrome) and follow the instructions.
+## Run e2e tests in headless mode
+
+Just add the following configuration in `protractor-conf.js` file to run the headless mode
+
+```javascript
+exports.config = {
+    //...
+    // it will use chrome driver directly in headless mode 
+    capabilities: {
+        browserName: 'chrome',
+        chromeOptions: {
+            args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+        }
+    }
+    //...
+}
+``` 
 
 ## References
 
 * https://www.protractortest.org/#/tutorial
+* https://www.protractortest.org/#/browser-setup#using-headless-chrome
 * https://github.com/angular/protractor/blob/master/docs/timeouts.md#waiting-for-angular-on-page-load
+* [AngularJS End to End testing with Protractor Episode 001]
+
+[AngularJS End to End testing with Protractor Episode 001]: https://www.youtube.com/watch?v=SPTzxva2hiE&t=1s
