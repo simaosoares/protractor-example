@@ -27,11 +27,15 @@ npm test
 ```
 ## Using Chrome Headless
 
-Just checkout the branch [chrome-headless](https://github.com/simaosoares/protractor-example/tree/headless-chrome) and follow the instructions.
+Just checkout the branch [chrome-headless] and follow the instructions.
 
 ## Using Direct Connect
 
 Just checkout the branch [direct-connect](https://github.com/simaosoares/protractor-example/tree/direct-connect) and follow the instructions.
+
+## Running Protractor Locally
+
+Checkout the branch [chrome-headless] and see the details in the `package.json` file.
 
 ## References
 
@@ -40,3 +44,4 @@ Just checkout the branch [direct-connect](https://github.com/simaosoares/protrac
 * [AngularJS End to End testing with Protractor Episode 001]
 
 [AngularJS End to End testing with Protractor Episode 001]: https://www.youtube.com/watch?v=SPTzxva2hiE&t=1s
+[chrome-headless]: https://github.com/simaosoares/protractor-example/tree/direct-connect
