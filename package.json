@@ -4,7 +4,12 @@
   "description": "Protractor example",
   "main": "index.js",
   "scripts": {
-    "test": "protractor protractor-conf.js"
+    "preupdate-web-driver": "npm install",
+    "update-web-driver": "node node_modules/protractor/bin/webdriver-manager update",
+    "prestart-selenium-server": "npm run update-web-driver",
+    "start-selenium-server": "node node_modules/protractor/bin/webdriver-manager start",
+    "pretest": "npm run update-web-driver",
+    "test": "node node_modules/protractor/bin/protractor protractor-conf.js"
   },
   "keywords": [
     "Protractor"
@@ -12,6 +17,7 @@
   "author": "Simão",
   "license": "ISC",
   "devDependencies": {
-    "jasmine": "^3.5.0"
+    "jasmine": "^3.5.0",
+    "protractor": "^5.4.2"
   }
 }
