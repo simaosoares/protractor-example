@@ -2,7 +2,7 @@
 
 ## Install Protractor
 
-Use npm to install Protractor globally and start selenium server with:
+Use npm to install Protractor **globally** and start selenium server with:
 ```shell
 npm install -g protractor
 webdriver-manager update
@@ -25,6 +25,9 @@ The npm script `npm test` is configured to run all the steps above:
 ```shell
 npm test
 ```
+## Using Chrome Headless
+
+Just checkout the branch [chrome-headless](https://github.com/simaosoares/protractor-example/tree/headless-chrome) and follow the instructions.
 
 ## References
 
