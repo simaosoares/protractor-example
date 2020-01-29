@@ -25,6 +25,9 @@ The npm script `npm test` is configured to run all the steps above:
 ```shell
 npm test
 ```
+## Using Chrome Headless
+
+Just checkout the branch [Chrome Headless](https://github.com/simaosoares/protractor-example/tree/headless-chrome) and follow the instructions.
 
 ## References
 
