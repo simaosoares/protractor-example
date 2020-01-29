@@ -29,7 +29,14 @@ npm test
 
 Just checkout the branch [chrome-headless](https://github.com/simaosoares/protractor-example/tree/headless-chrome) and follow the instructions.
 
+## Using Direct Connect
+
+Just checkout the branch [direct-connect](https://github.com/simaosoares/protractor-example/tree/direct-connect) and follow the instructions.
+
 ## References
 
 * https://www.protractortest.org/#/tutorial
 * https://github.com/angular/protractor/blob/master/docs/timeouts.md#waiting-for-angular-on-page-load
+* [AngularJS End to End testing with Protractor Episode 001]
+
+[AngularJS End to End testing with Protractor Episode 001]: https://www.youtube.com/watch?v=SPTzxva2hiE&t=1s
